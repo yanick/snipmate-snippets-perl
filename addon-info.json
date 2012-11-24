@@ -1,0 +1,10 @@
+{
+"name" : "snipmate-snippets-perl",
+"version" : "dev",
+"author" : "Yanick Champoux",
+"maintainer" : "Yanick Champoux",
+"repository" : {"type": "git", "url":
+"git://github.com/yanick/snipmate-snippets-perl.git"},
+"dependencies" : { },
+"description" : "Perl-centric snippets for snipMate.vim"
+}
