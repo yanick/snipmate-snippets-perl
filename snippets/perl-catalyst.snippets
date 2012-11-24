@@ -1,0 +1,10 @@
+snippet chained
+	sub ${1:name} :Chained('${2:chain}') :PathPart('${3:path}') :${4:capture}Args(${5:0}) {
+		my ( $self, $c, ${6:@others} ) = @_;
+
+		${7:# do stuff}
+	}
+
+snippet stash
+	$c->stash->{${1}}${2}
+

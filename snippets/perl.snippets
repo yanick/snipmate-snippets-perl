@@ -1,3 +1,4 @@
+# taken from the generic SnipMate snippet repo
 # #!/usr/bin/perl
 snippet #!
 	#!/usr/bin/perl
@@ -88,14 +89,3 @@ snippet slurp
 	{ local $/ = undef; local *FILE; open FILE, "<${2:file}"; $$1 = <FILE>; close FILE }${3}
 
 
-snippet stash
-	$c->stash->{${1}}${2}
-
-# Catalyst stuff
-
-snippet chained
-	sub ${1:name} :Chained('${2:chain}') :PathPart('${3:path}') :${4:capture}Args(${5:0}) {
-		my ( $self, $c, ${6:@others} ) = @_;
-
-		${7:# do stuff}
-	}
